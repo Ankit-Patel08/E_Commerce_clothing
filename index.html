@@ -23,14 +23,20 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li id="lg-bag"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>    
+                    <li id="lg-bag">
+                     <a href="cart.html" class="cart-icon">
+                         <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count">0</span></a>
+                    </li>  
                     <a href="#" id="close"><i class="fas fa-times"></i></a>
                 </ul>
             </div>
             <div id="mobile">
                 <i id="bar" class="fas fa-outdent"></i>
-                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-</a>
+                <a href="cart.html" class="cart-icon">
+                 <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+                </a>
             </div>
         </section>
 
@@ -397,7 +403,7 @@
             <div class="col">
                 <img class="logo" src="img/logo.png" alt="">
                 <h4>Contact</h4>
-                <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
+                <p><strong>Address: </strong> Meerut road, Ghaziabaad , Delhi</p>
                 <p><strong>Phone: </strong> +01 2222 365 / (+91) 01 2345 6789</p>
                 <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
                 <div class="follow">
@@ -445,8 +451,8 @@
                 <p>@ 2026 - HTML CSS Ecommerce Template</p>
             </div>
         </footer>
-
-        <script src="script.js"></script>
+            <div id="cart-toast">Item added to cart 🛒</div>
+        <script src="script.js" defer></script>
     </body> 
 
 </html>

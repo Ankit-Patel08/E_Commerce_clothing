@@ -23,14 +23,19 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li id="lg-bag"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li id="lg-bag"><a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span></a></li>
                     <a href="#" id="close"><i class="fas fa-times"></i></a>
                 </ul>
             </div>
             <div id="mobile">
                 <i id="bar" class="fas fa-outdent"></i>
-                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-            </div>
+
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a>
+                </div>
         </section>
 
         <section id="page-header">
@@ -41,7 +46,7 @@
 
         <section id="product1" class="section-p1">
             <div class="pro-container">
-                <div class="pro" onclick="window.location.href='sproduct.html';">
+                <div class="pro">
                     <img src="img/products/f1.jpg" alt="">
                     <div class="des">
                         <span>adidas</span>
@@ -323,7 +328,7 @@
             <div class="col">
                 <img class="logo" src="img/logo.png" alt="">
                 <h4>Contact</h4>
-                <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
+                <p><strong>Address: </strong> Meerut raod, Ghaziabaad, Delhi</p>
                 <p><strong>Phone: </strong> +01 2222 365 / (+91) 01 2345 6789</p>
                 <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
                 <div class="follow">
@@ -374,6 +379,7 @@
 
 
         <script src="script.js"></script>
+        <div id="cart-toast">Item added to cart 🛒</div>
     </body>
 
 </html>
